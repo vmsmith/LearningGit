@@ -59,6 +59,16 @@ What changed?
 
 Line 3 tells you that there are changes to be commited. Those changes -- the file you added -- are actually on line 5. Line 4 tells you that if you are here by mistake, you can back up with `git rm --cached file1.txt`.
 
+Let's make our first commit:
 
+    git commit -m "initial commit"
+    
+Notice that you did not specify a file to commit. Git committed everything that was in the staging area.    
+    
+And you'll see something like this:
+
+    [master (root-commit) 6b38f0b] initial commit
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 file1.txt
 
 
