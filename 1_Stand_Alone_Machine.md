@@ -1,3 +1,5 @@
+##### Create a repository
+
 Create a repository:
 
 First, make a directory called `project1` and `cd` into it:
@@ -18,6 +20,8 @@ You should see something like this:
     drwxr-xr-x  10 rwjones  staff  340 Jul 31 15:47 .git
 
 There is a hidden directory called `.git`. This contains all the information Git needs to manage your repository and the files in it. You might want to `cd` into it and look around. For now, however, we will not be discussing the contents of `.git`.
+
+##### Create, add, and commit a file
 
 Create an empty text file. In my world I use `vim`, but you can use any text editor:
 
@@ -74,6 +78,8 @@ Anyway, after the `commit` you should see something like this:
     create mode 100644 file1.txt
 
 Here's what it means....
+
+##### Create a .gitignore file
 
 Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a file called `poem.txt` and paste the Frost poem in it. Then save it.
 
