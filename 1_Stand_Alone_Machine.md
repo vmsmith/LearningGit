@@ -91,9 +91,9 @@ Here's what it means....
 
 Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a file called `poem.txt` and paste the Frost poem in it. Then save it.
 
-Since this is a code-agnostic article, we're going to use that poem in our exercises to update our text file, `file1.txt`.
+Since this is a code-agnostic article, we're going to use that poem in our exercises to update our text file, `file1.txt`. Put differently, the poem is going to function as our *data*.
 
-But we have a problem. We do not want to be committing and managing the Frost poem. We only want to have it around to use as *data*, if you will. So we need to make the file `poem.txt` invisible to the Git commands.
+But we have a problem. We do not want to be committing and managing the Frost poem. We only want to have it around to use as *data*. So we need to make the file `poem.txt` invisible to the Git commands.
 
 #### Ignore the *data*
 
