@@ -22,4 +22,26 @@ There is a hidden directory called `.git`. This contains all the information Git
 Create an empty text file. In my world I use `vim`, but you can use any text editor:
 
     vim file1.txt
+    
+And check the status of your repository:
+
+    git status
+    
+You should see something like this:
+
+    On branch master
+
+    Initial commit
+
+    nothing to commit (create/copy files and use "git add" to track)
+
+We will discuss branches and master later on. For now, though, the important thing to note is the last line:
+
+    nothing to commit (create/copy files and use "git add" to track)
+    
+You created a file, but that action in and of itself has relatively little value for Git. You need to `add` it, which places it in the _____ where it can be tracked. So let's do that:
+
+    git add file1.txt
+    
+    
 
