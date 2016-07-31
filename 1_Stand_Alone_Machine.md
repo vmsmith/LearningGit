@@ -39,9 +39,22 @@ We will discuss branches and master later on. For now, though, the important thi
 
     nothing to commit (create/copy files and use "git add" to track)
     
-You created a file, but that action in and of itself has relatively little value for Git. You need to `add` it, which places it in the _____ where it can be tracked. So let's do that:
+You created a file, but that action in and of itself has relatively little value for Git. You need to `add` it, which places it in the staging area where it can be tracked. So let's do that:
 
     git add file1.txt
     
+Check the status again:
+
+    On branch master
+
+    Initial commit
+
+    Changes to be committed:
+      
+    (use "git rm --cached <file>..." to unstage)
     
+    new file:   file1.txt
+    
+What changed?
+
 
