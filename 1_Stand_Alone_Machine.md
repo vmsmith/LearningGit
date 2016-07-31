@@ -103,4 +103,14 @@ So in your `project` directory, create a hidden file called `.gitignore`:
     
 And in it, just write `poem.txt` then save it.
 
+### Make Some Changes
+
+Now you're ready to start seeing what version control is all about.
+
+Copy the first stanza of the Frost poem, and paste it in `file1.txt`. Then save the file and add it.
+
+    git add file1.txt
+    
+
+
 
