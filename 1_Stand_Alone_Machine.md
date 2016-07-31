@@ -51,10 +51,14 @@ Check the status again:
 
     Changes to be committed:
       
-    (use "git rm --cached <file>..." to unstage)
+      (use "git rm --cached <file>..." to unstage)
     
-    new file:   file1.txt
+             new file:   file1.txt
     
 What changed?
+
+Line 3 tells you that there are changes to be commited. Those changes -- the file you added -- are actually on line 5. Line 4 tells you that if you are here by mistake, you can back up with `git rm --cached file1.txt`.
+
+
 
 
