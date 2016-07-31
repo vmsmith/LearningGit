@@ -143,7 +143,28 @@ Now when we check the status we see:
 	  new file:   .gitignore
 	  modified:   file1.txt
 
+Great. Now let's commit...
 
+But now we have a problem. We have two files in the staging area, and we want commit messages for each. How do we do that?
+
+For now we will do them separately.
+
+    git commit .gitignore -m "initial commit"
+    
+Which gave back:
+
+    [master 22116f8] initial commit
+    1 file changed, 1 insertion(+)
+    create mode 100644 .gitignore
+    
+And:
+
+    git commit file1.txt -m "added first stanza"
+    
+Which gave back:
+
+    [master cd59fd1] added first stanza
+    1 file changed, 5 insertions(+)
 
 
 
