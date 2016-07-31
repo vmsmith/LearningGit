@@ -1,7 +1,5 @@
 ### Create a repository
 
-Create a repository:
-
 First, make a directory called `project1` and `cd` into it:
 
     mkdir project1
