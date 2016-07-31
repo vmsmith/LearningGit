@@ -3,7 +3,6 @@
 
 ### Version Control
 
-![Git Workflow](../graphics/GitOverview.png)
-Format: ![Alt Text](url)
+![Git Workflow](./graphics/GitOverview.png)
 
 
