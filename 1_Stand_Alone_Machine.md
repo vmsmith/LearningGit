@@ -71,11 +71,9 @@ Line 3 tells you that there are changes to be commited. Those changes -- the fil
 
 Let's make our first commit:
 
-    git commit -m "initial commit"
+    git commit file1.txt -m "initial commit"
     
-Notice that you did not specify a file to commit. Git committed everything that was in the staging area.    
-
-Also, the `-m` flag told Git that you were going to make a commit message. Git commit messages are hugely important. In time you will want to get more sophisticated in your messages, and you might want to bookmark this article for future reference: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/). For now we'll keep the commit messages simple, but you should get into the habit of writing meaningful commit messages whenever you commit. And by convention, the very first message is "initial commit".
+Note that the `-m` flag told Git that you were going to make a commit message. Git commit messages are hugely important. In time you will want to get more sophisticated in your messages, and in fact you might want to bookmark this article for future reference: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/). For now we'll keep the commit messages simple, but you should get into the habit of writing meaningful commit messages whenever you commit. And by convention, the very first message is "initial commit".
     
 Anyway, after the `commit` you should see something like this:
 
@@ -89,7 +87,7 @@ Here's what it means....
 
 #### Add *data*
 
-Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a file called `poem.txt` and paste the Frost poem in it. Then save it.
+Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `poem.txt` and paste the Frost poem in it. Then save it.
 
 Since this is a code-agnostic article, we're going to use that poem in our exercises to update our text file, `file1.txt`. Put differently, the poem is going to function as our *data*.
 
@@ -101,7 +99,7 @@ So in your `project` directory, create a hidden file called `.gitignore`:
 
     vim .gitignore
     
-And in it, just write `poem.txt` then save it.
+And in it, just write `poem.txt` then save it. From now on, Git will ignore `poem.txt` when doing adds and commits.
 
 ### Make Some Changes
 
@@ -128,7 +126,7 @@ And...
 
 	    .gitignore
 
-We will talk about `reset` and `HEAD` later. For now we want to notice that `.gitignore` did not get added. We had made some changes to the repository earlier, and had then forgotten them.
+We will talk about `reset` and `HEAD` later. For now we want to notice that `.gitignore` did not get added. We had made some changes to it (and hence, the repository) earlier, but we forgot to add and commit them.
 
 One way to mitigate that is to use a `.` when you do adds. This tells Git to add *all* files in the repository to the staging area.
 
