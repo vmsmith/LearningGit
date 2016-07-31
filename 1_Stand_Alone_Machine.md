@@ -115,7 +115,8 @@ Check the status:
 
     git status
 
-    
+And...
+
     On branch master
     Changes to be committed:
       (use "git reset HEAD <file>..." to unstage)
@@ -123,9 +124,25 @@ Check the status:
 	     modified:   file1.txt
 
     Untracked files:
-    (use "git add <file>..." to include in what will be committed)
+      (use "git add <file>..." to include in what will be committed)
 
 	    .gitignore
+
+We will talk about `reset` and `HEAD` later. For now we want to notice that `.gitignore` did not get added. We had made some changes to the repository earlier, and had then forgotten them.
+
+One way to mitigate that is to use a `.` when you do adds. This tells Git to add *all* files in the repository to the staging area.
+
+    git add .
+    
+Now when we check the status we see:
+
+    On branch master
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+	  new file:   .gitignore
+	  modified:   file1.txt
+
 
 
 
