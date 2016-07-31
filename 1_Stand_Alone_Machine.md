@@ -71,4 +71,10 @@ And you'll see something like this:
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 file1.txt
 
+Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a file called `poem.txt` and paste the Frost poem in it. Then save it.
+
+Since this is a code-agnostic article, we're going to use that poem in our exercises to update our text file, `file1.txt`.
+
+But we have a problem. We do not want to be committing and managing the Frost poem. We only want to have it around to use as *data*, if you will. So we need to make the file `poem.txt` invisible to the Git commands.
+
 
