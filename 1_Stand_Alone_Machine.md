@@ -64,12 +64,16 @@ Let's make our first commit:
     git commit -m "initial commit"
     
 Notice that you did not specify a file to commit. Git committed everything that was in the staging area.    
+
+Also, the `-m` flag told Git that you were going to make a commit message. Git commit messages are hugely important. In time you will want to get more sophisticated in your messages, and you might want to bookmark this article for future reference: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/). For now we'll keep the commit messages simple, but you should get into the habit of writing meaningful commit messages whenever you commit. And by convention, the very first message is "initial commit".
     
-And you'll see something like this:
+Anyway, after the `commit` you should see something like this:
 
     [master (root-commit) 6b38f0b] initial commit
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 file1.txt
+
+Here's what it means....
 
 Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a file called `poem.txt` and paste the Frost poem in it. Then save it.
 
