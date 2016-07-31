@@ -77,4 +77,10 @@ Since this is a code-agnostic article, we're going to use that poem in our exerc
 
 But we have a problem. We do not want to be committing and managing the Frost poem. We only want to have it around to use as *data*, if you will. So we need to make the file `poem.txt` invisible to the Git commands.
 
+So in your `project` directory, create a hidden file called `.gitignore`:
+
+    vim .gitignore
+    
+And in it, just write `poem.txt` then save it.
+
 
