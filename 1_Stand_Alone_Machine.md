@@ -166,8 +166,10 @@ Which gave back:
     [master cd59fd1] added first stanza
     1 file changed, 5 insertions(+)
 
+I would point out that even though the first stanza of the poem only has four lines, my commit shows 5 insertions. This is because I added a carriage return at the end.
 
+Notice that in the first line of each feedback message there is a square bracket with `[master _____]` and what looks like some hexidecimal text. That is the key to version control.
 
-
+When you commit something, Git gives it a SHA-1
 
 
