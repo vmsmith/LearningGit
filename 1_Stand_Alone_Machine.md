@@ -166,6 +166,25 @@ I would point out that even though the first stanza of the poem only has four li
 
 Notice that in the first line of each feedback message there is a square bracket with `[master _____]` and what looks like some hexidecimal text. That is the key to version control.
 
-When you commit something, Git gives it a SHA-1
+When you make a commit, Git creates something called a [SHA1 hash](https://en.wikipedia.org/wiki/SHA-1). The SHA1 hash function takes some data as input and generates a unique 40 character string from it. By "unique," we mean that no other input should ever produce the same 40 character output. But...The same input data should *always* produce the exact same hash output.
+
+Those seven or so characters in the square brackets after "master" are the first seven characters of the 40 character SHA1 output associated with that commit.
+
+And this is the key to being able to track your versioning and roll back to earlier versions of your work.
+
+### Checking History
+
+At this point, you have made three changes:
+
+* The initial commit of `file1.txt`
+* The initial commit of `.gitignore`
+* The addition of the first stanza to `file1.txt`
+
+You can take a look at this history with `git log`:
+
+    git log
+    
+
+
 
 
