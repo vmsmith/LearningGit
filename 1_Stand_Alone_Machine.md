@@ -1,4 +1,4 @@
-##### Create a repository
+### Create a repository
 
 Create a repository:
 
@@ -21,7 +21,9 @@ You should see something like this:
 
 There is a hidden directory called `.git`. This contains all the information Git needs to manage your repository and the files in it. You might want to `cd` into it and look around. For now, however, we will not be discussing the contents of `.git`.
 
-##### Create, add, and commit a file
+### Create, add, and commit a file
+
+#### Create
 
 Create an empty text file. In my world I use `vim`, but you can use any text editor:
 
@@ -43,6 +45,8 @@ We will discuss branches and master later on. For now, though, the important thi
 
     nothing to commit (create/copy files and use "git add" to track)
     
+#### Add    
+    
 You created a file, but that action in and of itself has relatively little value for Git. You need to `add` it, which places it in the staging area where it can be tracked. So let's do that:
 
     git add file1.txt
@@ -62,6 +66,8 @@ Check the status again:
 What changed?
 
 Line 3 tells you that there are changes to be commited. Those changes -- the file you added -- are actually on line 5. Line 4 tells you that if you are here by mistake, you can back up with `git rm --cached file1.txt`.
+
+#### Commit
 
 Let's make our first commit:
 
