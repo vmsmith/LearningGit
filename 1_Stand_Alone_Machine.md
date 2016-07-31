@@ -111,6 +111,25 @@ Copy the first stanza of the Frost poem, and paste it in `file1.txt`. Then save 
 
     git add file1.txt
     
+Check the status:
+
+    git status
+
+    
+    On branch master
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+	     modified:   file1.txt
+
+    Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+
+	    .gitignore
+
+
+
+
 
 
 
