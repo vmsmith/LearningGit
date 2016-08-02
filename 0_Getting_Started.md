@@ -12,15 +12,33 @@ Once its' installed, check to make sure your version matches the latest version 
 
     git -version
 
-Now check to find out where it's installed:
+Now you want to add Git to your environment. Here's how I do it...
+
+First, I check to find out where it's installed:
 
     which git
     
-Mac users should get back something like this:
+I get back something like this:
 
     /usr/local/bin/git
 
+Note that depending on your OS X version you might have a slightly different path.
 
+Then, I open my `.bash_profile` file...
+
+    vim .bash_profile
+    
+And add this:
+
+    export PATH=$PATH:/usr/local/bin/git
+    
+I save and close the `.bash_profile` file, and then source it to
+
+    source ~/.bash_profile
+    
+Finally, I check to ensure the path has been updated:
+
+    echo $PATH
 
 ### Configuring Git
 
