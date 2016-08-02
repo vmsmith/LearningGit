@@ -1,4 +1,4 @@
-#### Learning Git and GitHub
+### Learning Git and GitHub
 
 Git is a distributed version control system. We'll discuss what that means exactly in a little bit. What's important for now is that knowing Git and how to use it is a skill that goes hand-in-hand with knowing how to write software. 
 
@@ -10,13 +10,15 @@ I personally had a very hard time learning to use Git (and its companion, GitHub
 
 So this is a guide for poor fools like me who want to learn Git and GitHub in a logical, clear manner.
 
-##### Step 0: Getting Started
+### Layout
+
+#### Step 0: Getting Started
 
 * Downloading and installing Git
 * Setting up your configurations
 * Introduction to version control
 
-##### Step 1: Git and the Stand-alone Machine
+#### Step 1: Git and the Stand-alone Machine
 
 * Initializing a repository
 * The `.git` file
@@ -28,12 +30,16 @@ So this is a guide for poor fools like me who want to learn Git and GitHub in a 
 * Viewing history with `log`
 * Going back in time with `checkout`
 
-##### Step 2: Using GitHub
+#### Step 2: Using GitHub
 
 
 
-##### Step 3: Working with a Collaborator
+#### Step 3: Working with a Collaborator
 
 
 
-##### Step 4: Working with Multiple Collaborators
+#### Step 4: Working with Multiple Collaborators
+
+### Using Git with RStudio
+
+### Glossary
