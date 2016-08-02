@@ -30,7 +30,7 @@ Then, I open my `.bash_profile` file...
     
 And add this:
 
-    export PATH=$PATH:/usr/local/bin/git
+    export PATH=$PATH:/usr/local/bin
     
 I save and close the `.bash_profile` file, and then source it to
 
@@ -40,8 +40,17 @@ Finally, I check to ensure the path has been updated:
 
     echo $PATH
 
+In my case I got back this:
+
+    /usr/local/bin:/opt/local/bin:/opt/local/sbin:
+    /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:
+    /usr/X11/bin:/Library/TeX/texbin
+
+And there you see it, first thing.
+
 ### Configuring Git
 
+With Git installed, it's time to configure it.
 
 
 ### About Version Control
