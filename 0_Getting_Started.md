@@ -52,6 +52,20 @@ And there you see it, first thing.
 
 With Git installed, it's time to configure it.
 
+Git maintains three configuration files:
+
+* One at the system level, called `/etc/gitconfig`
+* One at the user level, usually `~/.gitconfig`
+* One at the repository level, `.git/config`, a unique one of which will reside in the working directory of each repository.
+
+These are "cascading" in the sense that configurations in each level override, or "trump", those of the previous level(s). Similar to Cascading Style Sheets in web pages.
+
+In other words, configurations in `.git/config` will trump those in `/etc/gitconfig` and `~/.gitconfig`.
+
+At this point you will want to add your user name and e-mail to your global
+
+    git config --global user.name "User Name"
+    git config --global user.email johndoe@example.com
 
 ### About Version Control
 
