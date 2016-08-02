@@ -1,12 +1,14 @@
 
 
-### Installing Git
+### Downloading and Installing Git
 
 [Git web site](https://git-scm.com/)
 
+### Configuring Git
 
 
-### Version Control
+
+### About Version Control
 
 ![Git Workflow](./graphics/GitOverview.png)
 
