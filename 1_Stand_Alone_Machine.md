@@ -220,4 +220,25 @@ One of the features of a good hash function is that it will always produce the s
 
 And if you go back and look at the very first commit, you'll see these seven characters: `6b38f0b`. Note that these are the first seven characters of the entire hash output. 
 
+### Recalling Earlier Commits
 
+OK, let's add another stanza to the poem, then add and commit.
+
+    [master 2e78d29] added second stanza
+     1 file changed, 4 insertions(+)
+     
+Notice that seven character string has changed. That's because the file changed and what you committed is different.
+
+Now take a look at the history:
+
+    git log
+    
+And you'll see that this is not the top entry:
+
+    commit 2e78d290de87c1c324a86f62447d19f8e7778392
+    Author: vmsmith <redditor.vmsmith@gmail.com>
+    Date:   Wed Aug 17 08:59:21 2016 -0400
+
+        added second stanza
+
+Suppose that, for whatever reason, you wanted to bring up an earlier version of file1.txt. Suppose you wanted to bring up a version of the file with only the first stanza.
