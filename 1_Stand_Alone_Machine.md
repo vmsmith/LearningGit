@@ -212,6 +212,12 @@ And you should get something like this:
 
         initial commit
 
+This is a reverse history (i.e., most recent on top) of what you have done. And nothing should look to strange other than the very long sequence of letters and numbers after the word "commit". What does this mean?
 
+That number is the [SHA-a hash](https://en.wikipedia.org/wiki/SHA-1) of your commit. You can read about hashes in general, and SHA-1 in particular, through the Wikipedia link. The short version, however, is that every time you commit, Git using a special cryptographic function to compute a hash of your commit. This is an alphanumeric string that is unique to the input that was provided. In this case, the input was your commit. 
+
+One of the features of a good hash function is that it will always produce the same output (that alphnumeric string) if you use the same input. But if you make even the tiniest change, the output will be different. So that output can actually serve as the signature, or name, of your commit. 
+
+And if you go back and look at the very first commit, you'll see these seven characters: `6b38f0b`. Note that these are the first seven characters of the entire hash output. 
 
 
