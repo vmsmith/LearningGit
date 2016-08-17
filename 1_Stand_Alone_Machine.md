@@ -79,7 +79,15 @@ Anyway, after the `commit` you should see something like this:
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 file1.txt
 
-Here's what it means....
+Here's what it means (although don't worry about memorizing this):
+
+* Line 1: *master* refers to the branch you are working on, and we will discuss branches later
+          `6b38f0b` is the first seven characters of this commit's signature, and we will discuss that shortly
+          *initial commit* is your commit message
+* Line 2: 
+* Line 3:
+
+Again, don't feel compelled to memorize this, just know that it exists and has meaning.
 
 ### Manage the repo
 
