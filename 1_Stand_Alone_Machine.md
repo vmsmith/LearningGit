@@ -184,6 +184,25 @@ You can take a look at this history with `git log`:
 
     git log
     
+And you should get something like this:
+
+    commit cd59fd116b78e92c4de8444ab98d177bd0a2f208
+    Author: vmsmith <redditor.vmsmith@gmail.com>
+    Date:   Sun Jul 31 16:40:44 2016 -0400
+
+        added first stanza
+
+    commit 22116f81f244f637dc1b659cfc346e1651d453e3
+    Author: vmsmith <redditor.vmsmith@gmail.com>
+    Date:   Sun Jul 31 16:40:17 2016 -0400
+
+        initial commit
+
+    commit 6b38f0bee17c1db419e223bedf10eca6f4b85dd9
+    Author: vmsmith <redditor.vmsmith@gmail.com>
+    Date:   Sun Jul 31 16:02:42 2016 -0400
+
+        initial commit
 
 
 
