@@ -242,3 +242,5 @@ And you'll see that this is not the top entry:
         added second stanza
 
 Suppose that, for whatever reason, you wanted to bring up an earlier version of file1.txt. Suppose you wanted to bring up a version of the file with only the first stanza.
+
+Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
