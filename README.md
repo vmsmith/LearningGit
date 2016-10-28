@@ -20,7 +20,7 @@ So this is a guide for poor fools like me who want to learn Git and GitHub in a 
 * Setting up your configurations
 * Introduction to version control
 
-#### Step 1: Git and the Stand-alone Machine
+#### Step 1: [Git and the Stand-alone Machine](https://github.com/vmsmith/LearningGit/blob/master/1_Stand_Alone_Machine.md)
 
 * Initializing a repository
 * The `.git` file
