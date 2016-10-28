@@ -1,3 +1,5 @@
+## Introduction
+
 ### Learning Git and GitHub
 
 Git is a distributed version control system. We'll discuss what that means exactly in a little bit. What's important for now is that knowing Git -- and how to use it -- is a skill that goes hand-in-hand with knowing how to write software. 
