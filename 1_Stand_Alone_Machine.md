@@ -95,11 +95,11 @@ Again, don't feel compelled to memorize this, just know that it exists and has m
 
 #### Add *data*
 
-Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `poem.txt` and paste the Frost poem in it. Then save it.
+Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `poem1.txt` and paste the Frost poem in it. Then save it. Now copy the Robert Frost poem, [Birches](https://www.poetryfoundation.org/poems-and-poets/poems/detail/44260), and save it in `project1` as `poem2.txt`.
 
-Since this is a code-agnostic article, we're going to use that poem in our exercises to update our text file, `file1.txt`. Put differently, the poem is going to function as our *data*.
+Since this is a code-agnostic article, we're going to use poems in our exercises to update our files. Put differently, the poems are going to function as our *data*.
 
-But we have a problem. We do not want to be committing and managing the Frost poem. We only want to have it around to use as *data*. So we need to make the file `poem.txt` invisible to the Git commands.
+But we have a problem. We do not want to be committing and managing the Frost poems. We only want to have them around to use as *data*. So we need to make the files `poem1.txt` and `poem2.txt` invisible to the Git commands.
 
 #### Ignore the *data*
 
@@ -107,13 +107,13 @@ So in your `project` directory, create a hidden file called `.gitignore`:
 
     vim .gitignore
     
-And in it, just write `poem.txt` then save it. From now on, Git will ignore `poem.txt` when doing adds and commits.
+And in it, just write `poem1.txt` on the first line and `poem2.txt` on the second line. Then save `.gitignore`. From now on, Git will ignore both poem files when doing adds and commits.
 
 ### Make Some Changes
 
 Now you're ready to start seeing what version control is all about.
 
-Copy the first stanza of the Frost poem, and paste it in `file1.txt`. Then save the file and add it.
+Copy the first stanza of `poem1.txt` and paste it in `file1.txt`. Then save the file and add it.
 
     git add file1.txt
     
@@ -136,7 +136,7 @@ And...
 
 We will talk about `reset` and `HEAD` later. For now we want to notice that `.gitignore` did not get added. We had made some changes to it (and hence, the repository) earlier, but we forgot to add and commit them.
 
-One way to mitigate that is to use a `.` when you do adds. This tells Git to add *all* files in the repository to the staging area.
+One way to mitigate that is to use a `.` when you do adds. This tells Git to add *all* files in the repository (except those in `.gitignore`) to the staging area.
 
     git add .
     
