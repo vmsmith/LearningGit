@@ -6,9 +6,9 @@ Having a GitHub repository is one of the things people sometimes want to see in 
 
 Git was developed by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) to better manage [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) development. That in and of itself ought to tell you something. Namely, that it was developed to manage a rather complex and arcane piece of software that has hundreds (perhaps thousands) of contributors world wide. And because of that, it probably has a lot more features and power than you (and I) are ever going to need.
 
-Nonetheless, it was developed by and for uber-geeks, and both the official documentation as well as the help you can find via online forums and blog articles can be challenging.
+Going hand-in-hand with what it is and why it was developed, it was developed by and for uber-geeks. As a result, both the official documentation as well as the help you can find via online forums and blog articles can be challenging.
 
-I personally had a very hard time learning to use Git (and its companion, GitHub). It seemed as though amost everything I read assumed I already knew something that I usually did not know. That, combined with the fact that most software geeks ________
+I personally had a very hard time learning to use Git (and its companion, GitHub). It seemed as though almost everything I read assumed I already knew something that I usually did not know. That, combined with the fact that many software development geeks cannot write  very well to begin with, made learning it a painful process.
 
 So this is a guide for poor fools like me who want to learn Git and GitHub in a logical, clear manner. 
 
