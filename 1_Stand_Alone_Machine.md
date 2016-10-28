@@ -1,3 +1,5 @@
+Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
+
 ### Create a repository
 
 First, make a directory called `project1` and `cd` into it:
@@ -243,4 +245,4 @@ And you'll see that this is not the top entry:
 
 Suppose that, for whatever reason, you wanted to bring up an earlier version of file1.txt. Suppose you wanted to bring up a version of the file with only the first stanza.
 
-Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
+<< Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
