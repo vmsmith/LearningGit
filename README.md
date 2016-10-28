@@ -14,7 +14,7 @@ So this is a guide for poor fools like me who want to learn Git and GitHub in a 
 
 ### Layout
 
-#### Step 0: Getting Started
+#### Step 0: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
 
 * Downloading and installing Git
 * Setting up your configurations
