@@ -45,9 +45,9 @@ We will discuss branches and master later on. For now, though, the important thi
 
     nothing to commit (create/copy files and use "git add" to track)
     
+You created a file, but that action in and of itself has relatively little value for Git. You need to place it in the staging area where it can be tracked. You do that with the `add` command.
+
 #### Add    
-    
-You created a file, but that action in and of itself has relatively little value for Git. You need to `add` it, which places it in the staging area where it can be tracked. So let's do that:
 
     git add file1.txt
     
