@@ -71,5 +71,4 @@ At this point you will want to add your user name and e-mail to your global
 
 ![Git Workflow](./graphics/GitOverview.png)
 
-
-Next: [The Stand Alone Machine](https://github.com/vmsmith/LearningGit/blob/master/1_Stand_Alone_Machine.md)
+<< [Introduction](https://github.com/vmsmith/LearningGit/blob/master/README.md) Next: [The Stand Alone Machine](https://github.com/vmsmith/LearningGit/blob/master/1_Stand_Alone_Machine.md) >>
