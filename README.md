@@ -4,7 +4,7 @@ Git is a distributed version control system. We'll discuss what that means exact
 
 Having a GitHub repository is one of the things people sometimes want to see in job hiring situations. At a minimum a GitHub repository will allow people to examine your code. But it can also highlight your ability to work collaboratively with others, and it can demonstrate that you have been able to learn a somewhat sophisticated software system. In short, learning Git and GitHub in today's world is almost certainly worth it.
 
-Git was developed by Linus Torvalds to better manage the Linux kernel. That in and of itself ought to tell you something. Namely, that it was developed to manage a rather complex and arcane piece of software that has hundreds (perhaps thousands) of contributors world wide. ANd because of that, it probably has a lot more features and power than you (and I) are ever going to need.
+Git was developed by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) to better manage [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) development. That in and of itself ought to tell you something. Namely, that it was developed to manage a rather complex and arcane piece of software that has hundreds (perhaps thousands) of contributors world wide. And because of that, it probably has a lot more features and power than you (and I) are ever going to need.
 
 Nonetheless, it was developed by and for uber-geeks, and both the official documentation as well as the help you can find via online forums and blog articles can be challenging.
 
