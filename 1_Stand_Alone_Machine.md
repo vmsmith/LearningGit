@@ -29,7 +29,7 @@ Create an empty text file. In my world I use [`vim`](https://en.wikipedia.org/wi
 
     vim file1.txt
     
-And check the status of your repository:
+Now check the status of your repository:
 
     git status
     
