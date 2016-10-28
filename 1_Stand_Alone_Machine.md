@@ -1,4 +1,4 @@
-Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
+<< Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
 
 ### Create a repository
 
