@@ -124,7 +124,7 @@ So in your `project` directory, create a hidden file called `.gitignore`:
 
     vim .gitignore
     
-And in it, just write `data1.txt` on the first line and `data2.txt` on the second line. Then save `.gitignore`. From now on, Git will ignore both poem files when doing adds and commits.
+And in it, just write `data1` on the first line and `data2` on the second line. Then save `.gitignore`. From now on, Git will ignore both poem files when doing adds and commits.
 
 ### Make Some Changes
 
