@@ -98,13 +98,13 @@ Again, don't feel compelled to memorize this, just know that it exists and has m
 
 ### Manage the repo
 
-#### Add *data*
+#### Add some *data*
 
-Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `poem1.txt` and paste the Frost poem in it. Then save it. Now copy the Robert Frost poem, [Birches](https://www.poetryfoundation.org/poems-and-poets/poems/detail/44260), and save it in `project1` as `poem2.txt`.
+Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `data1.txt` and paste the Frost poem in it. Then save it. Now copy the Robert Frost poem, [Birches](https://www.poetryfoundation.org/poems-and-poets/poems/detail/44260), and save it in `project1` as `data2.txt`.
 
-Since this is a code-agnostic article, we're going to use poems in our exercises to update our files. Put differently, the poems are going to function as our *data*.
+Since this is a code-agnostic article, we're going to use text (in the form of poems) in our exercises to update our files. Put differently, the poems are going to function as our *data*.
 
-But we have a problem. We do not want to be committing and managing the Frost poems. We only want to have them around to use as *data*. So we need to make the files `poem1.txt` and `poem2.txt` invisible to the Git commands.
+But we have a problem. We do not want to be committing and managing the Frost poems. We only want to have them around to use as *data*. So we need to make the files `data1.txt` and `data2.txt` invisible to the Git commands.
 
 #### Ignore the *data*
 
@@ -112,13 +112,13 @@ So in your `project` directory, create a hidden file called `.gitignore`:
 
     vim .gitignore
     
-And in it, just write `poem1.txt` on the first line and `poem2.txt` on the second line. Then save `.gitignore`. From now on, Git will ignore both poem files when doing adds and commits.
+And in it, just write `data1.txt` on the first line and `data2.txt` on the second line. Then save `.gitignore`. From now on, Git will ignore both poem files when doing adds and commits.
 
 ### Make Some Changes
 
 Now you're ready to start seeing what version control is all about.
 
-Copy the first stanza of `poem1.txt` and paste it in `file1.txt`. Then save the file and add it.
+Copy the first stanza of `data1.txt` and paste it in `file1.txt`. Then save the file and add it.
 
     git add file1.txt
     
@@ -141,7 +141,7 @@ And...
 
 We will talk about `reset` and `HEAD` later. For now we want to notice that `.gitignore` did not get added. We had made some changes to it (and hence, the repository) earlier, but we forgot to add and commit them.
 
-One way to mitigate that is to use a `.` when you do adds. This tells Git to add *all* files in the repository (except those in `.gitignore`) to the staging area.
+One way to mitigate that is to use a `.` with the `add` command. This tells Git to add *all* files in the repository (except those in `.gitignore`) to the staging area.
 
     git add .
     
@@ -177,13 +177,13 @@ Which gave back:
     [master cd59fd1] added first stanza
     1 file changed, 5 insertions(+)
 
-I would point out that even though the first stanza of the poem only has four lines, my commit shows 5 insertions. This is because I added a carriage return at the end.
+(I would point out that even though the first stanza of the poem only has four lines, my commit shows 5 insertions. This is because I added a carriage return at the end.)
 
 Notice that in the first line of each feedback message there is a square bracket with `[master _____]` and what looks like some hexidecimal text. That is the key to version control.
 
-When you make a commit, Git creates something called a [SHA1 hash](https://en.wikipedia.org/wiki/SHA-1). The SHA1 hash function takes some data as input and generates a unique 40 character string from it. By "unique," we mean that no other input should ever produce the same 40 character output. But...The same input data should *always* produce the exact same hash output.
+When you make a commit, Git creates something called a [SHA1 hash](https://en.wikipedia.org/wiki/SHA-1). The SHA1 hash function takes some data as input and generates a unique 40 hexidecimal character string from it. By "unique," we mean that no other input should ever produce the same 40 character output. But...the same input data should *always* produce the exact same hash output.
 
-Those seven or so characters in the square brackets after "master" are the first seven characters of the 40 character SHA1 output associated with that commit.
+Those seven characters in the square brackets after "master" are the first seven characters of the 40 character SHA1 output associated with that commit.
 
 And this is the key to being able to track your versioning and roll back to earlier versions of your work.
 
@@ -219,9 +219,9 @@ And you should get something like this:
 
         initial commit
 
-This is a reverse history (i.e., most recent on top) of what you have done. And nothing should look to strange other than the very long sequence of letters and numbers after the word "commit". What does this mean?
+This is a reverse history (i.e., most recent on top) of what you have done. And nothing should look too strange other than the very long sequence of letters and numbers after the word "commit". What does this mean?
 
-That number is the [SHA-a hash](https://en.wikipedia.org/wiki/SHA-1) of your commit. You can read about hashes in general, and SHA-1 in particular, through the Wikipedia link. The short version, however, is that every time you commit, Git using a special cryptographic function to compute a hash of your commit. This is an alphanumeric string that is unique to the input that was provided. In this case, the input was your commit. 
+That number is the full [SHA-a hash](https://en.wikipedia.org/wiki/SHA-1) of your commit. You can read about hashes in general, and SHA-1 in particular, through the Wikipedia link. The short version, however, is that every time you commit, Git using a special cryptographic function to compute a hash of your commit. This is an alphanumeric string that is unique to the input that was provided. In this case, the input was your commit. 
 
 One of the features of a good hash function is that it will always produce the same output (that alphnumeric string) if you use the same input. But if you make even the tiniest change, the output will be different. So that output can actually serve as the signature, or name, of your commit. 
 
@@ -234,7 +234,7 @@ OK, let's add another stanza to the poem, then add and commit.
     [master 2e78d29] added second stanza
      1 file changed, 4 insertions(+)
      
-Notice that seven character string has changed. That's because the file changed and what you committed is different.
+Notice that the seven character string has changed. That's because the file changed and what you committed is different.
 
 Now take a look at the history:
 
