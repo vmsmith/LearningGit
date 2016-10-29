@@ -130,7 +130,7 @@ And in it, just write `data1` on the first line and `data2` on the second line. 
 
 Now you're ready to start seeing what version control is all about.
 
-Copy the first stanza of `data1.txt` and paste it in `file1.txt`. Then save the file and add it.
+Copy the first stanza of `data1` and paste it in `file1.txt`. Then save the file and add it.
 
     git add file1.txt
     
@@ -151,9 +151,13 @@ And...
 
 	    .gitignore
 
-We will talk about `reset` and `HEAD` later. For now we want to notice that `.gitignore` did not get added. We had made some changes to it (and hence, the repository) earlier, but we forgot to add and commit them.
+We will talk about `reset` and `HEAD` later. For now we want to notice two things...
 
-One way to mitigate that is to use a `.` with the `add` command. This tells Git to add *all* files in the repository (except those in `.gitignore`) to the staging area.
+First, that `files1.txt` has been modified.
+
+Second, that `.gitignore` is not being tracked.  Although we made some changes to it (and hence, the repository) earlier, we forgot to add and commit them.
+
+One way to mitigate that is to use a `.` with the `add` command. This tells Git to add *all* files in the repository (except those in `.gitignore`) to the staging area. Try it...
 
     git add .
     
@@ -166,7 +170,7 @@ Now when we check the status we see:
 	  new file:   .gitignore
 	  modified:   file1.txt
 
-Great. Now let's commit...
+Great...time to commit.
 
 But now we have a problem. We have two files in the staging area, and we want commit messages for each. How do we do that?
 
@@ -174,22 +178,24 @@ For now we will do them separately.
 
     git commit .gitignore -m "initial commit"
     
-Which gave back:
+Which gave back (for me) this:
 
-    [master 22116f8] initial commit
-    1 file changed, 1 insertion(+)
+    [master ea3bcac] initial commit
+    1 file changed, 2 insertion(+)
     create mode 100644 .gitignore
-    
+
+Notice "2 insertions". This refers to the two data files -- each on its own line -- in the `.gitignore` file.
+
 And:
 
     git commit file1.txt -m "added first stanza"
     
 Which gave back:
 
-    [master cd59fd1] added first stanza
-    1 file changed, 5 insertions(+)
+    [master d8dd3bd] added first stanza
+    1 file changed, 4 insertions(+)
 
-(I would point out that even though the first stanza of the poem only has four lines, my commit shows 5 insertions. This is because I added a carriage return at the end.)
+Again, the "4 insertions" refers to the four lines in the stanza you added.
 
 Notice that in the first line of each feedback message there is a square bracket with `[master _____]` and what looks like some hexidecimal text. That is the key to version control.
 
