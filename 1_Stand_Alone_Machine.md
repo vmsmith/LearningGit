@@ -197,7 +197,7 @@ Which gave back:
 
 Again, the "4 insertions" refers to the four lines in the stanza you added.
 
-Notice that in the first line of each feedback message there is a square bracket with `[master _____]` and what looks like some hexidecimal text. That is the key to version control.
+Notice that in the first line of each feedback message there is a square bracket with `[master nnnnnnn]`, with those seven `n`s being  what looks like some hexidecimal text. That is the key to version control.
 
 When you make a commit, Git creates something called a [SHA1 hash](https://en.wikipedia.org/wiki/SHA-1). The SHA1 hash function takes some data as input and generates a unique 40 hexidecimal character string from it. By "unique," we mean that no other input should ever produce the same 40 character output. But...the same input data should *always* produce the exact same hash output.
 
