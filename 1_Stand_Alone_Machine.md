@@ -1,5 +1,14 @@
 << Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md)
 
+### Section Overview
+
+In this section you will learn how to:  
+  * Create a repository
+  * Stage and commit files to the repository  
+  * Designate files to be ignored by `git`
+  * Check the status
+  * Review the history
+
 ### Create a repository
 
 First, make a directory called `project1` and `cd` into it:
