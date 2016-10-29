@@ -110,9 +110,11 @@ Again, don't feel compelled to memorize this, just know that it exists and has m
 
 #### Add some *data*
 
-Before we proceed, go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `data1.txt` and paste the Frost poem in it. Then save it. Now copy the Robert Frost poem, [The Road Not Taken](https://www.poetryfoundation.org/resources/learning/core-poems/detail/44272), and save it in `project1` as `data2.txt`.
+Before we proceed, let's flesh out the project.
 
-Since this is a code-agnostic article, we're going to use text (in the form of poems) in our exercises to update our files. Put differently, the poems are going to function as our *data*.
+Go to this link and copy the entire Robert Frost poem, [Stopping by the Woods on a Snowy Evening](https://www.poetryfoundation.org/poems-and-poets/poems/detail/42891). Then, in your `project1` directory, create a text file called `data1.txt` and paste the Frost poem in it. Then save it. Now copy the Robert Frost poem, [The Road Not Taken](https://www.poetryfoundation.org/resources/learning/core-poems/detail/44272), and save it in `project1` as `data2.txt`. **Note:** Do not copy the poems' titles or author name; just copy the poems themselves.
+
+Since this is a code-agnostic article, we're going to use text (in the form of poems) in our exercises to update our files. Put differently, the poems are going to function sort of like project *data*.
 
 But we have a problem. We do not want to be committing and managing the Frost poems. We only want to have them around to use as *data*. So we need to make the files `data1.txt` and `data2.txt` invisible to the Git commands.
 
