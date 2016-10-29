@@ -5,7 +5,7 @@
 In this section you will learn how to:  
   * Create a repository
   * Stage and commit files to the repository  
-  * Manage the reposity
+  * Manage the repository
 
 ### Create a Repository
 
