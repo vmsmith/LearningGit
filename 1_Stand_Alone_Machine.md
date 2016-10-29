@@ -5,11 +5,9 @@
 In this section you will learn how to:  
   * Create a repository
   * Stage and commit files to the repository  
-  * Designate files to be ignored by `git`
-  * Check the status
-  * Review the history
+  * Manage the reposity
 
-### Create a repository
+### Create a Repository
 
 First, make a directory called `project1` and `cd` into it:
 
@@ -30,9 +28,7 @@ You should see something like this:
 
 There is a hidden directory called `.git`. This contains all the information Git needs to manage your repository and the files in it. You might want to `cd` into it and look around. For now, however, we will not be discussing the contents of `.git`.
 
-### Create, add, and commit a file
-
-#### Create
+### Stage and Commit a File
 
 Create an empty text file. In my world I use [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor)), but you can use any text editor:
 
@@ -56,7 +52,7 @@ We will discuss branches and master later on. For now, though, the important thi
     
 You created a file, but that action in and of itself has relatively little value for Git. You need to place it in the staging area where it can be tracked. You do that with the `add` command.
 
-#### Add    
+#### Stage a File    
 
     git add file1.txt
     
@@ -76,7 +72,7 @@ What changed?
 
 Line 3 tells you that there are changes to be commited. Those changes -- the file you added -- are actually on line 5. Line 4 tells you that if you are here by mistake, you can back up with `git rm --cached file1.txt`.
 
-#### Commit
+#### Commit a File
 
 Let's make our first commit:
 
