@@ -101,7 +101,7 @@ Here's what it means (although don't worry about memorizing this):
 * Line 1: *master* refers to the branch you are working on, and we will discuss branches later;  
           `7fdadf7` is the first seven characters of this commit's signature, and we will discuss that shortly;  
           *initial commit* is your commit message
-* Line 2: 
+* Line 2: This says that you made a change, but did not add or delete anything.
 * Line 3: This is a technical way of saying you created file1.txt in mode 100644, which is an internal representation of file type and file permissions.
 
 Again, don't feel compelled to memorize this, just know that it exists and has meaning.
