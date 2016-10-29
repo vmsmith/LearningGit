@@ -250,4 +250,4 @@ And you'll see that this is not the top entry:
 
 Suppose that, for whatever reason, you wanted to bring up an earlier version of file1.txt. Suppose you wanted to bring up a version of the file with only the first stanza.
 
-<< Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md) || Next: GitHub and the Web >>
+<< Previous: [Getting Started](https://github.com/vmsmith/LearningGit/blob/master/0_Getting_Started.md) || Next: [GitHub and the Web](https://github.com/vmsmith/LearningGit/blob/master/2_GitHub_and_the_Web.md) >>
