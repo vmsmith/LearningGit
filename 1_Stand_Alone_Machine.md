@@ -14,7 +14,7 @@ First, make a directory called `project1` and `cd` into it:
     mkdir project1
     cd project1
     
-Now, in the `project1` directory, initialize a repository with `init` and look at what has happened:
+Now, in the `project1` directory, create (or *initialize*) a repository with `init` and look at what has happened:
 
     git init
     ls -l -a
