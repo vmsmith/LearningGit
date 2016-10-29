@@ -30,15 +30,15 @@ There is a hidden directory called `.git`. This contains all the information Git
 
 ### Stage and Commit a File
 
-Create an empty text file and call it `file1.txt`. In my world I use [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor)), but you can use any text editor:
+Create an empty text file and call it `file1.txt`. In my world I use the `touch` command, but you can do it with any text editor:
 
-    vim file1.txt
+    touch file1.txt
     
 Now check the status of your repository:
 
     git status
     
-You should see something like this:
+You should see something that looks like this (it may look slightly different, but don't worry about it):
 
     On branch master
 
@@ -70,29 +70,39 @@ Check the status again:
     
 What changed?
 
-Line 3 tells you that there are changes to be commited. Those changes -- the file you added -- are actually on line 5. Line 4 tells you that if you are here by mistake, you can back up with `git rm --cached file1.txt`.
+Line 3 tells you that there are changes to be commited. Those changes -- the file you added -- are actually on line 5. (Line 4 tells you that if you are here by mistake, you can back up with `git rm --cached file1.txt`. We will discuss that -- and related topics -- later.)
 
 #### Commit a File
 
 Let's make our first commit:
 
+    git commit file1.txt 
+    
+You will almost certainly get some sort of message you were not expecting that will begin something like this:
+
+    Please enter the commit message for your changes... 
+    
+When you `commit` a file, you *need* to include a "commit message." This is a little message associated with that commit that explains the reason for the commit. This, in turn, let's you review the history of your commits later on so you can reach back in time and use an earlier version of your code if you want to.
+
+So let's try it again. Get yourself back to the command line and enter:
+
     git commit file1.txt -m "initial commit"
     
-Note that the `-m` flag told Git that you were going to make a commit message. Git commit messages are hugely important. In time you will want to get more sophisticated in your messages, and in fact you might want to bookmark this article for future reference: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/). For now we'll keep the commit messages simple, but you should get into the habit of writing meaningful commit messages whenever you commit. And by convention, the very first message is "initial commit".
+That `-m` is called a flag, and it told Git that you were going to make a commit message. Again, Git commit messages are hugely important. In time you will want to get more sophisticated in your messages, and in fact you might want to bookmark this article for future reference: [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/). For now we'll keep the commit messages simple, but you should get into the habit of writing meaningful commit messages whenever you commit. And by convention, the very first message is "initial commit".
     
-Anyway, after the `commit` you should see something like this:
+After the `commit` you should see something like this:
 
-    [master (root-commit) 6b38f0b] initial commit
+    [master (root-commit) 7fdadf7] initial commit
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 file1.txt
 
 Here's what it means (although don't worry about memorizing this):
 
 * Line 1: *master* refers to the branch you are working on, and we will discuss branches later;  
-          `6b38f0b` is the first seven characters of this commit's signature, and we will discuss that shortly;  
+          `7fdadf7` is the first seven characters of this commit's signature, and we will discuss that shortly;  
           *initial commit* is your commit message
 * Line 2: 
-* Line 3:
+* Line 3: This is a technical way of saying you created file1.txt in mode 100644, which is an internal representation of file type and file permissions.
 
 Again, don't feel compelled to memorize this, just know that it exists and has meaning.
 
