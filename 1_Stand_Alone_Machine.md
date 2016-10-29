@@ -30,7 +30,7 @@ There is a hidden directory called `.git`. This contains all the information Git
 
 ### Stage and Commit a File
 
-Create an empty text file. In my world I use [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor)), but you can use any text editor:
+Create an empty text file and call it `file1.txt`. In my world I use [`vim`](https://en.wikipedia.org/wiki/Vim_(text_editor)), but you can use any text editor:
 
     vim file1.txt
     
