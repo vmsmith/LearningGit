@@ -1,5 +1,18 @@
 ### SSH keys
 
+Check if SSH key(s) already exist
+
+    ls -al ~/.ssh
+    
+By default, the filenames of the public keys are one of the following:
+
+    id_dsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+    id_rsa.pub
+
+If you don't have an existing public and private key pair, or don't wish to use any that are available to connect to GitHub, then generate a new SSH key.
+
 ### Create a repository on GitHub
 
 Do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
