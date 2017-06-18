@@ -48,6 +48,10 @@ In my case I got back this:
 
 And there you see it, first thing.
 
+### Updating Git
+
+If you already have git on your machine, check to ensure it is the most current version. If not, [upgrade it to the most current version]().
+
 ### Configuring Git
 
 With Git installed, it's time to configure it.
