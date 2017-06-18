@@ -3,6 +3,7 @@
 Check if SSH key(s) already exist
 
     ls -al ~/.ssh
+    ls -al /home/username/.ssh
     
 By default, the filenames of the public keys are one of the following:
 
@@ -12,6 +13,18 @@ By default, the filenames of the public keys are one of the following:
     id_rsa.pub
 
 If you don't have an existing public and private key pair, or don't wish to use any that are available to connect to GitHub, then generate a new SSH key.
+
+    ssh-keygen -t rsa -C "your_email@example.com"
+    
+There will be a little process to go through, but it's quick and you will now know the name of the file that contains the public key.
+
+Copy the new SSH key and paste it to GitHub. To copy, you can just run:
+
+    cat /directory/id_rsa.pub
+    
+Or something like that. The key will appear in the terminal, where you can highlight and copy it.
+
+On GitHub, click on the user icon on the front page, and then "SSH and GPG Keys". Click "New SSH Key", and then paste the key and save it.
 
 ### Create a repository on GitHub
 
@@ -32,3 +45,7 @@ Enter:
     git push -u origin master
     
 Refresh the GitHub repository to check that the committed data is there.
+
+### Cloning to another machine
+
+    $ git clone ssh://user@server/project.git
