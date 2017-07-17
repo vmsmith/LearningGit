@@ -28,9 +28,11 @@ On GitHub, click on the user icon on the front page, and then "SSH and GPG Keys"
 
 ### Create a repository on GitHub
 
+Initialize a repository on GitHub.
+
 Do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
 
-On the new repo page there may be instructions for what to do next. If not, copy the URL of the repo.
+On the new repo page there may be instructions for what to do next. If not, copy the URL of the repo. Make sure it's the URL associated with SSH keys.
 
 ### On the local machine
 
